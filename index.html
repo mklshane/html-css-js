@@ -11,10 +11,9 @@
 <body>
     <div>
         <!-- navigation bar -->
-        <nav class="d-none d-sm-flex justify-content-evenly align-items-center w-100 py-3 position-absolute">
-
+        <nav class="d-none d-lg-flex justify-content-evenly align-items-center w-100 py-3 position-absolute">
             <p class="title mb-0">Portfolio</p>
-            <div class="links">
+            <div class="links d-flex justify-content-between">
                 <a href="#home">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -27,7 +26,7 @@
         <section class="hero-section flex-column flex-lg-row gap-2" id="home">
             <div class="hero flex-column flex-lg-row text-center text-lg-start">
 
-                <div class="left"> <!-- left -->
+                <div class="left d-flex flex-column text-start"> <!-- left -->
                     <p class="name mb-1">Mikaela <span>Shane</span><br>Estrellanes</p>
                     <p class="desc mb-3">Hi! I'm a third-year Bachelor of Science in Computer Science student at De La Salle Lipa with a passion for building creative and functional digital experiences. I love coding web applications and web-based games, and I enjoy turning ideas into interactive projects using modern web technologies. I'm constantly learning and experimenting with new tools to improve my skills and bring engaging experiences to life.</p>
                     <div class="d-flex gap-2 mt-0">
@@ -45,48 +44,48 @@
         </section>
 
         <!-- projects section -->
-        <section class="projects py-5" id="projects">
-  <div class=" proj">
-    <p class="proj-header text-center mb-2">Featured Projects</p>
-    <p class="proj-desc text-center">Bringing ideas to life through code and creativity.</p>
+        <section class="projects d-flex w-100 vh-100 justify-content-center py-5" id="projects">
+          <div class=" proj w-80 d-flex position-relative flex-column justify-content-start align-items-center mt-3">
+            <p class="proj-header text-center mb-2">Featured Projects</p>
+            <p class="proj-desc text-center">Bringing ideas to life through code and creativity.</p>
 
-    <div class="container proj-container ">
-      <div class="row js-container g-4">
-        <!-- rendered projects -->
-      </div>
-    </div>
+            <div class="container proj-container ">
+              <div class="row js-container g-4">
+                <!-- rendered projects -->
+              </div>
+            </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Modal -->
+            <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <img class="project-image" src="" alt="">
+                  <div class="body-container">
+                    <div class="modal-body">
+                      Project details go here.
+                    </div>
+                    <div class="src-btn">
+                      <a href="" class="source" target="_blank">Source</a>
+                      <a href="" class="link" target="_blank">Live</a>
+                    </div>
+                    <div class="modal-tools">
+                      <!-- rendered tools -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <img class="project-image" src="" alt="">
-          <div class="body-container">
-            <div class="modal-body">
-              Project details go here.
-            </div>
-            <div class="src-btn">
-              <a href="" class="source" target="_blank">Source</a>
-              <a href="" class="link" target="_blank">Live</a>
-            </div>
-            <div class="modal-tools">
-              <!-- rendered tools -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
 
 
         <!-- skills section -->
-        <section class="skills-section" id="skills">
+        <section class="skills-section w-100 position-relative overflow-hidden" id="skills">
             <h2 class="skills-header">Skills & Tools</h2>
             <div class="skills-banner">
                 <div class="skills-track" id="skillsTrack">
@@ -96,10 +95,10 @@
         </section>
 
         <!-- contact section -->
-        <section class="contact" id="contact">
+        <section class="contact d-flex flex-column w-100 vh-100 justify-content-start align-items-center" id="contact">
             <p class="contact-header">Get In <span>Touch</span></p>
             
-                <div class="form-container">
+                <div class="form-container d-flex justify-content-center align-items-center ">
                     <form action="https://formsubmit.co/shaneestrellanes@gmail.com" method="post">
                         
                         <div class="mb-2">

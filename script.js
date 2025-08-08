@@ -59,7 +59,7 @@ function renderProjects() {
             <div class="col-12 col-md-4">
                 <div class="card h-100">
                     <img src=${project.image} class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column justify-content-between">
                     <h5 class="card-title">${project.name}</h5>
                     <p class="card-text">${project.desc} </p>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-index=${i}>Read more</button>

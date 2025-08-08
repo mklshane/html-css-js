@@ -30,8 +30,6 @@ nav {
 .links {
     background-color: #0e1527;
     padding: 15px 50px;
-    display: flex;
-    justify-content: space-between;
     gap: 50px;
     border: 2px solid #d8ed90;
     border-radius: 30px;
@@ -104,12 +102,6 @@ nav {
     
 }
 
-.left {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
 .name{
     font-size: 3rem;
     margin-bottom: 10px;
@@ -179,7 +171,6 @@ nav {
     position: relative;
     width: 350px;
     height: 350px;
-   
     border-radius: 20px;
     background: linear-gradient(to bottom, #10182d 35%, #b8e347);
     transition: transform 0.3s ease;
@@ -197,23 +188,9 @@ nav {
 }
 
 .projects {
-    display: flex;
-    width: 100%;
-    height: 100dvh;
     background-color: #171d35;
-    justify-content: center;
-    
 }
 
-.proj {
-    width: 80%;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin-top: 30px;
-}
 
 .proj-header{
     color: white;
@@ -254,12 +231,6 @@ nav {
     transition: transform 0.5s ease;
 }
 
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 .card-title {
     font-weight: bold;
     transition: transform 0.5s ease;
@@ -297,7 +268,6 @@ nav {
 
 
 .modal {
-    margin-top: 20px;
     width: 100%;
     height: 100%;
 }
@@ -367,8 +337,6 @@ nav {
     background: #2a345c;
 }
 
-
-
 .tool-style {
     display: inline-block;
     background: #131c3f;
@@ -420,18 +388,9 @@ nav {
 }
 
 
-
-.skills {
-    width: 100%;
-    height: 40dvh;
-}
-
 .skills-section {
-    width: 100%;
     background: linear-gradient(135deg, #131c3f, #1a2340);
     padding: 60px 0;
-    overflow: hidden;
-    position: relative;
 }
 
 .skills-section::before {
@@ -529,13 +488,7 @@ nav {
 }
 
 .contact{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100dvh;
     background-color: #171d35;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .contact-header {
@@ -547,14 +500,6 @@ nav {
     
 }
 
-.contact-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 5%;
-}
 
 .contact-header span {
     color: #b8e347;
@@ -589,9 +534,6 @@ nav {
 }
 
 .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 30px;
     width: 30%;
     max-width: 800px;
