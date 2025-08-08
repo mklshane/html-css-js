@@ -492,8 +492,8 @@ nav {
 }
 
 .contact-header {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: white;
     font-size: 2.4rem;
     font-weight: bold;
@@ -575,8 +575,8 @@ nav {
 
 
 .form-container textarea {
-    min-height: 120px;
-    max-height: 150px;
+    min-height: 100px;
+    max-height: 120px;
     resize: vertical;
 }
 
